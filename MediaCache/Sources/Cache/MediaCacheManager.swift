@@ -29,7 +29,7 @@ let FileM = FileManager.default
 public class MediaCacheManager: NSObject {
     
     /// shared instance, directory default NSTemporaryDirectory/MediaCache
-    public static let `default` = MediaCacheManager(directory: NSTemporaryDirectory().appending("/MediaCache"))
+    public static let `default` = MediaCacheManager(directory: NSTemporaryDirectory().appending("/soso/MediaCache"))
     
     /// default NSTemporaryDirectory/MediaCache/
     public let directory: String

@@ -12,17 +12,17 @@
 		9C0842FD2226372200EB8F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0842FB2226372200EB8F85 /* Main.storyboard */; };
 		9C0842FF2226372300EB8F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0842FE2226372300EB8F85 /* Assets.xcassets */; };
 		9C0843022226372300EB8F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0843002226372300EB8F85 /* LaunchScreen.storyboard */; };
-		9C9E4FB223D0122500007E6E /* VideoCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB878C6222639B900543226 /* VideoCache.framework */; };
-		9C9E4FB323D0122500007E6E /* VideoCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB878C6222639B900543226 /* VideoCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C5FEAD0255D5AD0009CC353 /* MediaCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5FEACF255D5AC9009CC353 /* MediaCache.framework */; };
+		9C5FEAD1255D5AD0009CC353 /* MediaCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5FEACF255D5AC9009CC353 /* MediaCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9CB878C5222639B900543226 /* PBXContainerItemProxy */ = {
+		9C5FEACE255D5AC9009CC353 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9CB878C1222639B900543226 /* VideoCache.xcodeproj */;
+			containerPortal = 9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9C08420B222530D700EB8F85;
-			remoteInfo = VideoCache;
+			remoteInfo = MediaCache;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9C9E4FB323D0122500007E6E /* VideoCache.framework in Embed Frameworks */,
+				9C5FEAD1255D5AD0009CC353 /* MediaCache.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +48,7 @@
 		9C0842FE2226372300EB8F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0843012226372300EB8F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C0843032226372300EB8F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CB878C1222639B900543226 /* VideoCache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoCache.xcodeproj; path = ../VideoCache.xcodeproj; sourceTree = "<group>"; };
+		9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaCache.xcodeproj; path = ../MediaCache.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C9E4FB223D0122500007E6E /* VideoCache.framework in Frameworks */,
+				9C5FEAD0255D5AD0009CC353 /* MediaCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		9C0842EB2226372200EB8F85 = {
 			isa = PBXGroup;
 			children = (
-				9CB878C1222639B900543226 /* VideoCache.xcodeproj */,
+				9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */,
 				9C0842F62226372200EB8F85 /* VideoCacheDemo */,
 				9C0842F52226372200EB8F85 /* Products */,
 				9C9E4FB123D0122500007E6E /* Frameworks */,
@@ -94,19 +94,19 @@
 			path = VideoCacheDemo;
 			sourceTree = "<group>";
 		};
+		9C5FEACB255D5AC9009CC353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C5FEACF255D5AC9009CC353 /* MediaCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9C9E4FB123D0122500007E6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CB878C2222639B900543226 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9CB878C6222639B900543226 /* VideoCache.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +159,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9CB878C2222639B900543226 /* Products */;
-					ProjectRef = 9CB878C1222639B900543226 /* VideoCache.xcodeproj */;
+					ProductGroup = 9C5FEACB255D5AC9009CC353 /* Products */;
+					ProjectRef = 9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -171,11 +171,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9CB878C6222639B900543226 /* VideoCache.framework */ = {
+		9C5FEACF255D5AC9009CC353 /* MediaCache.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VideoCache.framework;
-			remoteRef = 9CB878C5222639B900543226 /* PBXContainerItemProxy */;
+			path = MediaCache.framework;
+			remoteRef = 9C5FEACE255D5AC9009CC353 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

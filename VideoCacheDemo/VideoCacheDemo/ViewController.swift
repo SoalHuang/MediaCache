@@ -9,24 +9,24 @@
 import UIKit
 import AVKit
 import AVFoundation
-import VideoCache
+import MediaCache
 
-private let VideoCacheVersionKey = "VideoCacheVersionKey"
+private let MediaCacheVersionKey = "VideoCacheVersionKey"
 
 class ViewController: UIViewController {
     
     func setupVideoCache() {
         
-        VideoCacheManager.logLevel = .request
+        MediaCacheManager.logLevel = .request
         
-        VideoCacheManager.default.capacityLimit = Int64(1).GB
+        MediaCacheManager.default.capacityLimit = Int64(1).GB
         
         let version = 1
         
-        let savedVersion = UserDefaults.standard.integer(forKey: VideoCacheVersionKey)
+        let savedVersion = UserDefaults.standard.integer(forKey: MediaCacheVersionKey)
         if savedVersion < version {
-            try? VideoCacheManager.default.cleanAll(true)
-            UserDefaults.standard.set(version, forKey: VideoCacheVersionKey)
+            try? MediaCacheManager.default.cleanAll()
+            UserDefaults.standard.set(version, forKey: MediaCacheVersionKey)
             UserDefaults.standard.synchronize()
         }
     }
