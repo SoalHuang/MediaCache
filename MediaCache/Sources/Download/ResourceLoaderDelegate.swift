@@ -19,6 +19,8 @@ class VideoResourceLoaderDelegate: NSObject {
     
     var allowsCellularAccess: Bool = true
     
+    var useChecksum: Bool = false
+    
     let url: MediaURLType
     
     let cacheFragments: [MediaCacheFragment]
@@ -146,6 +148,7 @@ extension VideoResourceLoaderDelegate: AVAssetResourceLoaderDelegate {
                                         url: url,
                                         cacheFragments: cacheFragments,
                                         allowsCellularAccess: allowsCellularAccess,
+                                        useChecksum: useChecksum,
                                         delegate: self)
             loaders[resourceURL.absoluteString] = newLoader
             newLoader.add(loadingRequest: loadingRequest)

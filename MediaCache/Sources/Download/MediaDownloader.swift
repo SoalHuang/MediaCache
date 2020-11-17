@@ -114,6 +114,8 @@ class MediaDownloader: NSObject {
     
     let fileHandle: MediaFileHandle
     
+    let useChecksum: Bool
+    
     deinit {
         VLog(.info, "downloader id: \(id), VideoDownloader deinit\n")
         NSObject.cancelPreviousPerformRequests(withTarget: self)
@@ -123,12 +125,14 @@ class MediaDownloader: NSObject {
          session: URLSession?,
          url: MediaURLType,
          loadingRequest: AVAssetResourceLoadingRequest,
-         fileHandle: MediaFileHandle) {
+         fileHandle: MediaFileHandle,
+         useChecksum: Bool) {
         self.paths = paths
         self.session = session
         self.url = url
         self.loadingRequest = loadingRequest
         self.fileHandle = fileHandle
+        self.useChecksum = useChecksum
         super.init()
         dataDelegate = DownloaderSessionDelegate(delegate: self)
     }
@@ -203,7 +207,7 @@ extension MediaDownloader {
                 return
             }
             
-            guard data.checksum() else {
+            if useChecksum, !data.checksum() {
                 VLog(.error, "check sum is failure, re-download range: \(range)")
                 download(for: range)
                 return

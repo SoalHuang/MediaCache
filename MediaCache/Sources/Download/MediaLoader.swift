@@ -28,7 +28,8 @@ extension MediaLoader: MediaLoaderType {
                                          session: session,
                                          url: url,
                                          loadingRequest: loadingRequest,
-                                         fileHandle: fileHandle)
+                                         fileHandle: fileHandle,
+                                         useChecksum: useChecksum)
         downloader.delegate = self
         downLoaders.append(downloader)
         downloader.execute()
@@ -84,6 +85,7 @@ class MediaLoader: NSObject {
     let paths: MediaCachePaths
     let url: MediaURLType
     let cacheFragments: [MediaCacheFragment]
+    let useChecksum: Bool
     
     var session: URLSession?
     
@@ -98,11 +100,13 @@ class MediaLoader: NSObject {
          url: MediaURLType,
          cacheFragments: [MediaCacheFragment],
          allowsCellularAccess: Bool,
+         useChecksum: Bool,
          delegate: MediaLoaderDelegate?) {
         
         self.paths = paths
         self.url = url
         self.cacheFragments = cacheFragments
+        self.useChecksum = useChecksum
         self.delegate = delegate
         
         super.init()

@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
         let url = URL(string: "https://vod.putaocdn.com/IMG_4449.MOV?auth_key=1579155925-3012-0-36f3aa6455033a9b078ad93eef7dcdea")!
         let cacheItem = AVPlayerItem(remote: url, cacheKey: "1111")
-        
+        cacheItem.useChecksum = true
         playerViewController.player = AVPlayer(playerItem: cacheItem)
         playerViewController.player?.play()
     }

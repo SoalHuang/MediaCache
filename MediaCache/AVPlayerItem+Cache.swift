@@ -22,7 +22,9 @@ extension AVPlayerItem {
         let videoUrl = MediaURL(cacheKey: key, originUrl: url)
         manager.visit(url: videoUrl)
         
-        let loaderDelegate = VideoResourceLoaderDelegate(manager: manager, url: videoUrl, cacheFragments: cacheFragments)
+        let loaderDelegate = VideoResourceLoaderDelegate(manager: manager,
+                                                         url: videoUrl,
+                                                         cacheFragments: cacheFragments)
         let urlAsset = AVURLAsset(url: loaderDelegate.url.includeMediaCacheSchemeUrl, options: nil)
         urlAsset.resourceLoader.setDelegate(loaderDelegate, queue: .main)
         
@@ -41,5 +43,11 @@ extension AVPlayerItem {
     public var allowsCellularAccess: Bool {
         get { return resourceLoaderDelegate?.allowsCellularAccess ?? true }
         set { resourceLoaderDelegate?.allowsCellularAccess = newValue }
+    }
+    
+    /// default is false
+    public var useChecksum: Bool {
+        get { return resourceLoaderDelegate?.useChecksum ?? false }
+        set { resourceLoaderDelegate?.useChecksum = newValue }
     }
 }
