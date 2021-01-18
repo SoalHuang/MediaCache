@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  VideoCacheDemo
+//  MediaCacheDemo
 //
 //  Created by SoalHunag on 2019/2/27.
 //  Copyright © 2019 soso. All rights reserved.
@@ -11,11 +11,11 @@ import AVKit
 import AVFoundation
 import MediaCache
 
-private let MediaCacheVersionKey = "VideoCacheVersionKey"
+private let MediaCacheVersionKey = "MediaCacheVersionKey"
 
 class ViewController: UIViewController {
     
-    func setupVideoCache() {
+    func setupMediaCache() {
         
         MediaCacheManager.logLevel = .request
         
@@ -34,14 +34,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupVideoCache()
+        setupMediaCache()
         
         addChild(playerViewController)
         view.addSubview(playerViewController.view)
         
         let url = URL(string: "https://vod.putaocdn.com/IMG_4449.MOV?auth_key=1579155925-3012-0-36f3aa6455033a9b078ad93eef7dcdea")!
         let cacheItem = AVPlayerItem(remote: url, cacheKey: "1111")
-        cacheItem.useChecksum = true
+        
         playerViewController.player = AVPlayer(playerItem: cacheItem)
         playerViewController.player?.play()
     }

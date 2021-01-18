@@ -12,14 +12,12 @@
 		9C0842FD2226372200EB8F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0842FB2226372200EB8F85 /* Main.storyboard */; };
 		9C0842FF2226372300EB8F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0842FE2226372300EB8F85 /* Assets.xcassets */; };
 		9C0843022226372300EB8F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0843002226372300EB8F85 /* LaunchScreen.storyboard */; };
-		9C5FEAD0255D5AD0009CC353 /* MediaCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5FEACF255D5AC9009CC353 /* MediaCache.framework */; };
-		9C5FEAD1255D5AD0009CC353 /* MediaCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5FEACF255D5AC9009CC353 /* MediaCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C5FEACE255D5AC9009CC353 /* PBXContainerItemProxy */ = {
+		564DEBB825B5790300AA3CA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */;
+			containerPortal = 564DEBB425B5790300AA3CA5 /* MediaCache.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9C08420B222530D700EB8F85;
 			remoteInfo = MediaCache;
@@ -33,7 +31,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9C5FEAD1255D5AD0009CC353 /* MediaCache.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,14 +38,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C0842F42226372200EB8F85 /* VideoCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		564DEBB425B5790300AA3CA5 /* MediaCache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaCache.xcodeproj; path = ../MediaCache.xcodeproj; sourceTree = "<group>"; };
+		9C0842F42226372200EB8F85 /* MediaCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0842F72226372200EB8F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C0842F92226372200EB8F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C0842FC2226372200EB8F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C0842FE2226372300EB8F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0843012226372300EB8F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C0843032226372300EB8F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaCache.xcodeproj; path = ../MediaCache.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +53,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5FEAD0255D5AD0009CC353 /* MediaCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		564DEBB525B5790300AA3CA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				564DEBB925B5790300AA3CA5 /* MediaCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9C0842EB2226372200EB8F85 = {
 			isa = PBXGroup;
 			children = (
-				9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */,
-				9C0842F62226372200EB8F85 /* VideoCacheDemo */,
+				564DEBB425B5790300AA3CA5 /* MediaCache.xcodeproj */,
+				9C0842F62226372200EB8F85 /* MediaCacheDemo */,
 				9C0842F52226372200EB8F85 /* Products */,
 				9C9E4FB123D0122500007E6E /* Frameworks */,
 			);
@@ -76,12 +80,12 @@
 		9C0842F52226372200EB8F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C0842F42226372200EB8F85 /* VideoCacheDemo.app */,
+				9C0842F42226372200EB8F85 /* MediaCacheDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C0842F62226372200EB8F85 /* VideoCacheDemo */ = {
+		9C0842F62226372200EB8F85 /* MediaCacheDemo */ = {
 			isa = PBXGroup;
 			children = (
 				9C0842F72226372200EB8F85 /* AppDelegate.swift */,
@@ -91,15 +95,7 @@
 				9C0843002226372300EB8F85 /* LaunchScreen.storyboard */,
 				9C0843032226372300EB8F85 /* Info.plist */,
 			);
-			path = VideoCacheDemo;
-			sourceTree = "<group>";
-		};
-		9C5FEACB255D5AC9009CC353 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9C5FEACF255D5AC9009CC353 /* MediaCache.framework */,
-			);
-			name = Products;
+			path = MediaCacheDemo;
 			sourceTree = "<group>";
 		};
 		9C9E4FB123D0122500007E6E /* Frameworks */ = {
@@ -112,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C0842F32226372200EB8F85 /* VideoCacheDemo */ = {
+		9C0842F32226372200EB8F85 /* MediaCacheDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C0843062226372300EB8F85 /* Build configuration list for PBXNativeTarget "VideoCacheDemo" */;
+			buildConfigurationList = 9C0843062226372300EB8F85 /* Build configuration list for PBXNativeTarget "MediaCacheDemo" */;
 			buildPhases = (
 				9C0842F02226372200EB8F85 /* Sources */,
 				9C0842F12226372200EB8F85 /* Frameworks */,
@@ -125,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = VideoCacheDemo;
+			name = MediaCacheDemo;
 			productName = VideoCacheDemo;
-			productReference = 9C0842F42226372200EB8F85 /* VideoCacheDemo.app */;
+			productReference = 9C0842F42226372200EB8F85 /* MediaCacheDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C0842EF2226372200EB8F85 /* Build configuration list for PBXProject "VideoCacheDemo" */;
+			buildConfigurationList = 9C0842EF2226372200EB8F85 /* Build configuration list for PBXProject "MediaCacheDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,23 +155,23 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9C5FEACB255D5AC9009CC353 /* Products */;
-					ProjectRef = 9C5FEACA255D5AC9009CC353 /* MediaCache.xcodeproj */;
+					ProductGroup = 564DEBB525B5790300AA3CA5 /* Products */;
+					ProjectRef = 564DEBB425B5790300AA3CA5 /* MediaCache.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				9C0842F32226372200EB8F85 /* VideoCacheDemo */,
+				9C0842F32226372200EB8F85 /* MediaCacheDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9C5FEACF255D5AC9009CC353 /* MediaCache.framework */ = {
+		564DEBB925B5790300AA3CA5 /* MediaCache.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MediaCache.framework;
-			remoteRef = 9C5FEACE255D5AC9009CC353 /* PBXContainerItemProxy */;
+			remoteRef = 564DEBB825B5790300AA3CA5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -276,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,12 +343,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W395RC57B2;
-				INFOPLIST_FILE = VideoCacheDemo/Info.plist;
+				INFOPLIST_FILE = MediaCacheDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.putao.VideoCacheDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.putao.media-cache.demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,12 +361,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W395RC57B2;
-				INFOPLIST_FILE = VideoCacheDemo/Info.plist;
+				INFOPLIST_FILE = MediaCacheDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.putao.VideoCacheDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.putao.media-cache.demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C0842EF2226372200EB8F85 /* Build configuration list for PBXProject "VideoCacheDemo" */ = {
+		9C0842EF2226372200EB8F85 /* Build configuration list for PBXProject "MediaCacheDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C0843042226372300EB8F85 /* Debug */,
@@ -389,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C0843062226372300EB8F85 /* Build configuration list for PBXNativeTarget "VideoCacheDemo" */ = {
+		9C0843062226372300EB8F85 /* Build configuration list for PBXNativeTarget "MediaCacheDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C0843072226372300EB8F85 /* Debug */,
